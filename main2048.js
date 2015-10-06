@@ -137,8 +137,8 @@ function generateOneNumber(){
 
 $(document).keydown( function( event ){
     switch( event.keyCode ){
-        event.preventDefault();
         case 37: //left
+            event.preventDefault();
             if( moveLeft() ){
                 setTimeout("generateOneNumber()",210);
                 setTimeout("isgameover()",300);
